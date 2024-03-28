@@ -9,6 +9,12 @@
   --fw-semibold: 600;
   --fw-bold: 700;
   --fs-p: 0.875rem;
+  --container-min-width: 330px;
+  --container-max-width: 385px;
+  --container-border-radius: 20px;
+  --container-padding: 2.5rem;
+  --container-avatar-width: 5rem;
+  --container-avatar-border-radius: 50%;
 }
 
 /********************* Reset *********************/
@@ -46,3 +52,33 @@ h2,p,a { font-size: var(--fs-p);}
 .txt-grey { color: var(--grey); }
 .bg-grey { background-color: var(--grey); }
 .bg-dark-grey { background-color: var(--dark-grey); }
+
+/********************* FLEX *********************/
+.d-flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/********************* Main classes *********************/
+/*********** Container ***********/
+.container{
+  min-width: var(--container-min-width);
+  max-width: var(--container-max-width);
+  border-radius: var(--container-border-radius);
+  border: 1px solid var(--black);
+  box-shadow: 8px 8px var(--black);
+  padding: var(--container-padding);
+  transition: all 0.4s;
+}
+.container:hover{ box-shadow: 16px 16px var(--black); }
+.container h2{ transition: all 0.4s; }
+.container h2:hover{ 
+  color: var(--yellow);
+  cursor: pointer;
+}
+.container img{
+  width: var(--container-avatar-width);
+  border-radius: var(--container-avatar-border-radius);
+}
