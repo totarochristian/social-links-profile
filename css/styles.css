@@ -30,3 +30,9 @@ body{
   transform: translate(-50%, -50%);
 }
 p{ font-size: var(--fs-p);}
+
+/********************* FONTS *********************/
+/*********** WEIGHTS ***********/
+.fw-regular{ font-weight: var(--fw-regular); }
+.fw-semibold{ font-weight: var(--fw-semibold); }
+.fw-bold{ font-weight: var(--fw-bold); }
