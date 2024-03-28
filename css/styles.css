@@ -77,7 +77,6 @@ h2,p,a { font-size: var(--fs-p);}
   border: 1px solid var(--black);
   box-shadow: 8px 8px var(--black);
   padding: var(--container-padding);
-  transition: all 0.4s;
 }
 .container img {
   width: var(--container-avatar-width);
@@ -100,7 +99,7 @@ h2,p,a { font-size: var(--fs-p);}
   border-radius: var(--technologies-border-radius);
   padding: var(--technologies-padding-y) var(--technologies-padding-x);
   background-color: var(--grey);
-  transition: all 0.4s;
+  transition: all 1s;
 }
 #technologies>a:hover{
   background-color: var(--green);
