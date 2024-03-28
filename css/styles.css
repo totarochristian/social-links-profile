@@ -1,5 +1,5 @@
 /********************* Root variables *********************/
-:root{
+:root {
   --green: hsl(75, 94%, 57%);
   --white: hsl(0, 0%, 100%);
   --grey: hsl(0, 0%, 20%);
@@ -12,18 +12,18 @@
 }
 
 /********************* Reset *********************/
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 /********************* General *********************/
-body{
+body {
   background-color: var(--off-black);
   font-family: 'Inter';
 }
-.center-element{
+.center-element {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -33,6 +33,16 @@ p{ font-size: var(--fs-p);}
 
 /********************* FONTS *********************/
 /*********** WEIGHTS ***********/
-.fw-regular{ font-weight: var(--fw-regular); }
-.fw-semibold{ font-weight: var(--fw-semibold); }
-.fw-bold{ font-weight: var(--fw-bold); }
+.fw-regular { font-weight: var(--fw-regular); }
+.fw-semibold { font-weight: var(--fw-semibold); }
+.fw-bold { font-weight: var(--fw-bold); }
+
+/********************* COLORS *********************/
+/*********** PRIMARY ***********/
+.bg-green { background-color: var(--green); }
+.txt-green { color: var(--green); }
+/*********** NEUTRAL ***********/
+.txt-white { color: var(--white); }
+.txt-grey { color: var(--grey); }
+.bg-grey { background-color: var(--grey); }
+.bg-dark-grey { background-color: var(--dark-grey); }
