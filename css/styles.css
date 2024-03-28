@@ -15,6 +15,10 @@
   --container-padding: 2.5rem;
   --container-avatar-width: 5rem;
   --container-avatar-border-radius: 50%;
+  --technologies-gap: 1rem;
+  --technologies-padding-y: 0.6rem;
+  --technologies-padding-x: 1.2rem;
+  --technologies-border-radius: 8px;
 }
 
 /********************* Reset *********************/
@@ -63,7 +67,7 @@ h2,p,a { font-size: var(--fs-p);}
 
 /********************* Main classes *********************/
 /*********** Container ***********/
-.container{
+.container {
   min-width: var(--container-min-width);
   max-width: var(--container-max-width);
   border-radius: var(--container-border-radius);
@@ -72,13 +76,24 @@ h2,p,a { font-size: var(--fs-p);}
   padding: var(--container-padding);
   transition: all 0.4s;
 }
-.container:hover{ box-shadow: 16px 16px var(--black); }
-.container h2{ transition: all 0.4s; }
-.container h2:hover{ 
-  color: var(--yellow);
-  cursor: pointer;
-}
-.container img{
+.container img {
   width: var(--container-avatar-width);
   border-radius: var(--container-avatar-border-radius);
+}
+/*********** Technologies ***********/
+#technologies {
+  gap: var(--technologies-gap)
+}
+#technologies>a{
+  width: 100%;
+  text-align: center;
+  border-radius: var(--technologies-border-radius);
+  padding: var(--technologies-padding-y) var(--technologies-padding-x);
+  background-color: var(--grey);
+  transition: all 0.4s;
+}
+#technologies>a:hover{
+  background-color: var(--green);
+  color: var(--dark-grey);
+  cursor: pointer;
 }
