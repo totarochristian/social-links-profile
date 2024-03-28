@@ -29,7 +29,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-p{ font-size: var(--fs-p);}
+h2,p,a { font-size: var(--fs-p);}
 
 /********************* FONTS *********************/
 /*********** WEIGHTS ***********/
