@@ -15,8 +15,11 @@
   --container-padding: 2.5rem;
   --container-avatar-width: 5rem;
   --container-avatar-border-radius: 50%;
+  --biography-h1-m-t: 1.5rem;
+  --biography-h2-m-t: 0.8rem;
+  --biography-p-m-y: 1.5rem;
   --technologies-gap: 1rem;
-  --technologies-padding-y: 0.6rem;
+  --technologies-padding-y: 0.7rem;
   --technologies-padding-x: 1.2rem;
   --technologies-border-radius: 8px;
 }
@@ -79,6 +82,13 @@ h2,p,a { font-size: var(--fs-p);}
 .container img {
   width: var(--container-avatar-width);
   border-radius: var(--container-avatar-border-radius);
+}
+/*********** Biography ***********/
+#biography h1{ margin-top: var(--biography-h1-m-t); }
+#biography h2{ margin-top: var(--biography-h2-m-t); }
+#biography p{
+  margin-top: var(--biography-p-m-y);
+  margin-bottom: var(--biography-p-m-y);
 }
 /*********** Technologies ***********/
 #technologies {
