@@ -75,12 +75,19 @@ h2,p,a { font-size: var(--fs-p);}
 .container {
   min-width: var(--container-min-width);
   max-width: var(--container-max-width);
-  width: var(--container-max-width);
   border-radius: var(--container-border-radius);
   border: 1px solid var(--black);
   box-shadow: 8px 8px var(--black);
   padding: var(--container-padding-y) var(--container-padding-x);
 }
+@media screen and (max-width: 420px){ 
+  :root{
+    --container-padding-x: 1.5rem;
+    --container-padding-y: 1.6rem;
+  }
+  .container { width: var(--container-min-width); }
+ }
+@media screen and (min-width: 420px){ .container { width: var(--container-max-width); } }
 .container img {
   width: var(--container-avatar-width);
   border-radius: var(--container-avatar-border-radius);
