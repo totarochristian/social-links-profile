@@ -10,14 +10,16 @@
   --fw-bold: 700;
   --fs-p: 0.875rem;
   --container-min-width: 330px;
-  --container-max-width: 385px;
-  --container-border-radius: 20px;
-  --container-padding: 2.5rem;
+  --container-max-width: 375px;
+  --container-border-radius: 15px;
+  --container-padding-x: 2.5rem;
+  --container-padding-y: 2.6rem;
   --container-avatar-width: 5rem;
   --container-avatar-border-radius: 50%;
-  --biography-h1-m-t: 1.5rem;
+  --biography-h1-m-t: 1.6rem;
   --biography-h2-m-t: 0.8rem;
-  --biography-p-m-y: 1.5rem;
+  --biography-h2-p-b: 0.4rem;
+  --biography-p-m-y: 1.6rem;
   --technologies-gap: 1rem;
   --technologies-padding-y: 0.7rem;
   --technologies-padding-x: 1.2rem;
@@ -73,10 +75,11 @@ h2,p,a { font-size: var(--fs-p);}
 .container {
   min-width: var(--container-min-width);
   max-width: var(--container-max-width);
+  width: var(--container-max-width);
   border-radius: var(--container-border-radius);
   border: 1px solid var(--black);
   box-shadow: 8px 8px var(--black);
-  padding: var(--container-padding);
+  padding: var(--container-padding-y) var(--container-padding-x);
 }
 .container img {
   width: var(--container-avatar-width);
@@ -84,7 +87,10 @@ h2,p,a { font-size: var(--fs-p);}
 }
 /*********** Biography ***********/
 #biography h1{ margin-top: var(--biography-h1-m-t); }
-#biography h2{ margin-top: var(--biography-h2-m-t); }
+#biography h2{ 
+  margin-top: var(--biography-h2-m-t);
+  padding-bottom: var(--biography-h2-p-b);
+ }
 #biography p{
   margin-top: var(--biography-p-m-y);
   margin-bottom: var(--biography-p-m-y);
